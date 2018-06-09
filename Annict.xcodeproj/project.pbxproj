@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D5F8C7020CAD5BC00F99968 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F8C6F20CAD5BC00F99968 /* URL.swift */; };
+		9D6CA59820CBB10E005B80BE /* AnnictConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA59720CBB10E005B80BE /* AnnictConsts.swift */; };
+		9D6CA59A20CBCEA0005B80BE /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA59920CBCEA0005B80BE /* Notification.swift */; };
+		9D6CA59C20CBD1E1005B80BE /* ApiAuthTokenGateWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA59B20CBD1E1005B80BE /* ApiAuthTokenGateWay.swift */; };
+		9D6CA59F20CBD2A3005B80BE /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA59E20CBD2A3005B80BE /* AuthToken.swift */; };
+		9D6CA5A120CBD421005B80BE /* ApiAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */; };
+		9D6CA5A420CBD61C005B80BE /* AuthTokenGateWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A320CBD61C005B80BE /* AuthTokenGateWay.swift */; };
+		9DB1A0D720CA63BB00ACDA4B /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */; };
+		9DB1A0DA20CA7A8C00ACDA4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1A0DC20CA7A8C00ACDA4B /* Localizable.strings */; };
+		9DB1A0E320CA817400ACDA4B /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A0E220CA817400ACDA4B /* UINavigationController.swift */; };
 		9DB34BF92029FA1000534402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB34BF82029FA1000534402 /* AppDelegate.swift */; };
 		9DB34BFB2029FA1000534402 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB34BFA2029FA1000534402 /* FirstViewController.swift */; };
 		9DB34BFD2029FA1000534402 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB34BFC2029FA1000534402 /* SecondViewController.swift */; };
@@ -15,6 +25,12 @@
 		9DB34C052029FA1000534402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB34C032029FA1000534402 /* LaunchScreen.storyboard */; };
 		9DB34C102029FA1000534402 /* AnnictTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB34C0F2029FA1000534402 /* AnnictTests.swift */; };
 		9DB34C1B2029FA1000534402 /* AnnictUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB34C1A2029FA1000534402 /* AnnictUITests.swift */; };
+		9DC8A62120C9794800EB43E9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8A62020C9794800EB43E9 /* Login.storyboard */; };
+		9DC8A62320C979A600EB43E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62220C979A600EB43E9 /* LoginViewController.swift */; };
+		9DC8A62B20C97DFB00EB43E9 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62A20C97DFB00EB43E9 /* ApiClient.swift */; };
+		9DC8A62D20C97E4900EB43E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62C20C97E4900EB43E9 /* Result.swift */; };
+		9DC8A62F20C97FB200EB43E9 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */; };
+		9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D5F8C6F20CAD5BC00F99968 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		9D6CA59720CBB10E005B80BE /* AnnictConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictConsts.swift; sourceTree = "<group>"; };
+		9D6CA59920CBCEA0005B80BE /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		9D6CA59B20CBD1E1005B80BE /* ApiAuthTokenGateWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthTokenGateWay.swift; sourceTree = "<group>"; };
+		9D6CA59E20CBD2A3005B80BE /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthToken.swift; sourceTree = "<group>"; };
+		9D6CA5A320CBD61C005B80BE /* AuthTokenGateWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenGateWay.swift; sourceTree = "<group>"; };
+		9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
+		9DB1A0DB20CA7A8C00ACDA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9DB1A0DF20CA7AE900ACDA4B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		9DB1A0E020CA7AE900ACDA4B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9DB1A0E120CA7AE900ACDA4B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9DB1A0E220CA817400ACDA4B /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		9DB34BF52029FA1000534402 /* Annict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB34BF82029FA1000534402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB34BFA2029FA1000534402 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +78,12 @@
 		9DB34C162029FA1000534402 /* AnnictUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnictUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB34C1A2029FA1000534402 /* AnnictUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictUITests.swift; sourceTree = "<group>"; };
 		9DB34C1C2029FA1000534402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC8A62020C9794800EB43E9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9DC8A62220C979A600EB43E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9DC8A62A20C97DFB00EB43E9 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		9DC8A62C20C97E4900EB43E9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +111,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D6CA59D20CBD290005B80BE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA5A520CBD68E005B80BE /* Entities */,
+				9D6CA5A620CBD6A5005B80BE /* GateWays */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D6CA5A520CBD68E005B80BE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA59E20CBD2A3005B80BE /* AuthToken.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9D6CA5A620CBD6A5005B80BE /* GateWays */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA5A320CBD61C005B80BE /* AuthTokenGateWay.swift */,
+			);
+			path = GateWays;
+			sourceTree = "<group>";
+		};
+		9DB1A0D020CA5DB200ACDA4B /* GateWays */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA59B20CBD1E1005B80BE /* ApiAuthTokenGateWay.swift */,
+			);
+			path = GateWays;
+			sourceTree = "<group>";
+		};
+		9DB1A0D320CA5E7900ACDA4B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		9DB34BEC2029FA1000534402 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +178,18 @@
 				9DB34BF82029FA1000534402 /* AppDelegate.swift */,
 				9DB34BFA2029FA1000534402 /* FirstViewController.swift */,
 				9DB34BFC2029FA1000534402 /* SecondViewController.swift */,
+				9DC8A62C20C97E4900EB43E9 /* Result.swift */,
+				9D6CA59D20CBD290005B80BE /* Core */,
+				9DC8A62720C97DA300EB43E9 /* EntityGateWay */,
+				9DC8A61A20C978EA00EB43E9 /* Scene */,
 				9DB34BFE2029FA1000534402 /* Main.storyboard */,
 				9DB34C012029FA1000534402 /* Assets.xcassets */,
 				9DB34C032029FA1000534402 /* LaunchScreen.storyboard */,
 				9DB34C062029FA1000534402 /* Info.plist */,
+				9DB1A0DC20CA7A8C00ACDA4B /* Localizable.strings */,
+				9DB1A0E220CA817400ACDA4B /* UINavigationController.swift */,
+				9D5F8C6F20CAD5BC00F99968 /* URL.swift */,
+				9D6CA59920CBCEA0005B80BE /* Notification.swift */,
 			);
 			path = Annict;
 			sourceTree = "<group>";
@@ -126,6 +210,53 @@
 				9DB34C1C2029FA1000534402 /* Info.plist */,
 			);
 			path = AnnictUITests;
+			sourceTree = "<group>";
+		};
+		9DC8A61A20C978EA00EB43E9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8A61B20C978F800EB43E9 /* Login */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		9DC8A61B20C978F800EB43E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8A62020C9794800EB43E9 /* Login.storyboard */,
+				9DC8A62220C979A600EB43E9 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9DC8A62720C97DA300EB43E9 /* EntityGateWay */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8A62820C97DAD00EB43E9 /* API */,
+			);
+			path = EntityGateWay;
+			sourceTree = "<group>";
+		};
+		9DC8A62820C97DAD00EB43E9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9DB1A0D320CA5E7900ACDA4B /* Entities */,
+				9DB1A0D020CA5DB200ACDA4B /* GateWays */,
+				9DC8A62920C97DB700EB43E9 /* Requests */,
+				9DC8A62A20C97DFB00EB43E9 /* ApiClient.swift */,
+				9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */,
+				9D6CA59720CBB10E005B80BE /* AnnictConsts.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9DC8A62920C97DB700EB43E9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */,
+				9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +348,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 9DB34BEC2029FA1000534402;
 			productRefGroup = 9DB34BF62029FA1000534402 /* Products */;
@@ -235,8 +367,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB1A0DA20CA7A8C00ACDA4B /* Localizable.strings in Resources */,
 				9DB34C052029FA1000534402 /* LaunchScreen.storyboard in Resources */,
 				9DB34C022029FA1000534402 /* Assets.xcassets in Resources */,
+				9DC8A62120C9794800EB43E9 /* Login.storyboard in Resources */,
 				9DB34C002029FA1000534402 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB1A0D720CA63BB00ACDA4B /* AuthTokenRequest.swift in Sources */,
+				9DB1A0E320CA817400ACDA4B /* UINavigationController.swift in Sources */,
+				9DC8A62D20C97E4900EB43E9 /* Result.swift in Sources */,
+				9D5F8C7020CAD5BC00F99968 /* URL.swift in Sources */,
+				9DC8A62320C979A600EB43E9 /* LoginViewController.swift in Sources */,
+				9D6CA59820CBB10E005B80BE /* AnnictConsts.swift in Sources */,
 				9DB34BFD2029FA1000534402 /* SecondViewController.swift in Sources */,
+				9D6CA59A20CBCEA0005B80BE /* Notification.swift in Sources */,
+				9D6CA59F20CBD2A3005B80BE /* AuthToken.swift in Sources */,
+				9D6CA5A420CBD61C005B80BE /* AuthTokenGateWay.swift in Sources */,
+				9D6CA59C20CBD1E1005B80BE /* ApiAuthTokenGateWay.swift in Sources */,
+				9D6CA5A120CBD421005B80BE /* ApiAuthToken.swift in Sources */,
 				9DB34BF92029FA1000534402 /* AppDelegate.swift in Sources */,
 				9DB34BFB2029FA1000534402 /* FirstViewController.swift in Sources */,
+				9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */,
+				9DC8A62F20C97FB200EB43E9 /* ApiResponse.swift in Sources */,
+				9DC8A62B20C97DFB00EB43E9 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +448,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9DB1A0DC20CA7A8C00ACDA4B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB1A0DB20CA7A8C00ACDA4B /* en */,
+				9DB1A0E120CA7AE900ACDA4B /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9DB34BFE2029FA1000534402 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9DB34BFF2029FA1000534402 /* Base */,
+				9DB1A0DF20CA7AE900ACDA4B /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -312,6 +470,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9DB34C042029FA1000534402 /* Base */,
+				9DB1A0E020CA7AE900ACDA4B /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -323,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -431,10 +592,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z7TTVB9977;
+				DEVELOPMENT_TEAM = SE23SV7GZJ;
 				INFOPLIST_FILE = Annict/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yanaoto.Annict;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unlimited.anime.works.annict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,10 +607,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z7TTVB9977;
+				DEVELOPMENT_TEAM = SE23SV7GZJ;
 				INFOPLIST_FILE = Annict/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yanaoto.Annict;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unlimited.anime.works.annict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

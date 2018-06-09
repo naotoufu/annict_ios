@@ -9,7 +9,13 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        if let vc = UIStoryboard(name: "Login", bundle: Bundle.main).instantiateInitialViewController() as? LoginViewController{
+            let nav = UINavigationController(rootViewController: vc)
+            present(nav, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
