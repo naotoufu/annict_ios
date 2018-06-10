@@ -11,6 +11,9 @@ import WebKit
 
 class LoginViewController: UIViewController {
     
+    var presenter : LoginPresenter!
+    var configurator : LoginConfigurator!
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -37,6 +40,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configurator = LoginConfiguratorImplementation()
+        configurator.configure(loginViewController: self)
+        presenter.viewDidLoad()
+        
         self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
         self.navigationController?.navigationBar.tintColor = UIColor.lightGray
         

@@ -14,6 +14,10 @@
 		9D6CA59F20CBD2A3005B80BE /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA59E20CBD2A3005B80BE /* AuthToken.swift */; };
 		9D6CA5A120CBD421005B80BE /* ApiAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */; };
 		9D6CA5A420CBD61C005B80BE /* AuthTokenGateWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A320CBD61C005B80BE /* AuthTokenGateWay.swift */; };
+		9D6CA5A820CBEB02005B80BE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A720CBEB02005B80BE /* LoginPresenter.swift */; };
+		9D6CA5AB20CC116D005B80BE /* SendAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */; };
+		9D6CA5AE20CC2131005B80BE /* CacheAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */; };
+		9D6CA5B020CCC0FA005B80BE /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */; };
 		9DB1A0D720CA63BB00ACDA4B /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */; };
 		9DB1A0DA20CA7A8C00ACDA4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1A0DC20CA7A8C00ACDA4B /* Localizable.strings */; };
 		9DB1A0E320CA817400ACDA4B /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A0E220CA817400ACDA4B /* UINavigationController.swift */; };
@@ -58,6 +62,10 @@
 		9D6CA59E20CBD2A3005B80BE /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5A320CBD61C005B80BE /* AuthTokenGateWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenGateWay.swift; sourceTree = "<group>"; };
+		9D6CA5A720CBEB02005B80BE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAuthToken.swift; sourceTree = "<group>"; };
+		9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAuthToken.swift; sourceTree = "<group>"; };
+		9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
 		9DB1A0DB20CA7A8C00ACDA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9DB1A0DF20CA7AE900ACDA4B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 		9D6CA59D20CBD290005B80BE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9D6CA5A920CC1118005B80BE /* UseCases */,
 				9D6CA5A520CBD68E005B80BE /* Entities */,
 				9D6CA5A620CBD6A5005B80BE /* GateWays */,
 			);
@@ -134,6 +143,22 @@
 				9D6CA5A320CBD61C005B80BE /* AuthTokenGateWay.swift */,
 			);
 			path = GateWays;
+			sourceTree = "<group>";
+		};
+		9D6CA5A920CC1118005B80BE /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		9D6CA5AC20CC20DD005B80BE /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		9DB1A0D020CA5DB200ACDA4B /* GateWays */ = {
@@ -224,7 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				9DC8A62020C9794800EB43E9 /* Login.storyboard */,
+				9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */,
 				9DC8A62220C979A600EB43E9 /* LoginViewController.swift */,
+				9D6CA5A720CBEB02005B80BE /* LoginPresenter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -232,6 +259,7 @@
 		9DC8A62720C97DA300EB43E9 /* EntityGateWay */ = {
 			isa = PBXGroup;
 			children = (
+				9D6CA5AC20CC20DD005B80BE /* Cache */,
 				9DC8A62820C97DAD00EB43E9 /* API */,
 			);
 			path = EntityGateWay;
@@ -396,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6CA5B020CCC0FA005B80BE /* LoginConfigurator.swift in Sources */,
 				9DB1A0D720CA63BB00ACDA4B /* AuthTokenRequest.swift in Sources */,
 				9DB1A0E320CA817400ACDA4B /* UINavigationController.swift in Sources */,
 				9DC8A62D20C97E4900EB43E9 /* Result.swift in Sources */,
@@ -404,10 +433,13 @@
 				9D6CA59820CBB10E005B80BE /* AnnictConsts.swift in Sources */,
 				9DB34BFD2029FA1000534402 /* SecondViewController.swift in Sources */,
 				9D6CA59A20CBCEA0005B80BE /* Notification.swift in Sources */,
+				9D6CA5AB20CC116D005B80BE /* SendAuthToken.swift in Sources */,
 				9D6CA59F20CBD2A3005B80BE /* AuthToken.swift in Sources */,
 				9D6CA5A420CBD61C005B80BE /* AuthTokenGateWay.swift in Sources */,
 				9D6CA59C20CBD1E1005B80BE /* ApiAuthTokenGateWay.swift in Sources */,
 				9D6CA5A120CBD421005B80BE /* ApiAuthToken.swift in Sources */,
+				9D6CA5A820CBEB02005B80BE /* LoginPresenter.swift in Sources */,
+				9D6CA5AE20CC2131005B80BE /* CacheAuthToken.swift in Sources */,
 				9DB34BF92029FA1000534402 /* AppDelegate.swift in Sources */,
 				9DB34BFB2029FA1000534402 /* FirstViewController.swift in Sources */,
 				9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */,

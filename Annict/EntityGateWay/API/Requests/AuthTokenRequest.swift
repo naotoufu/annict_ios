@@ -12,7 +12,7 @@ struct  AuthTokenRequest: ApiRequest {
     var code: String!
     
     var urlRequest: URLRequest {
-        var urlComponents = URLComponents(string: AnnictConsts.rootURI)
+        var urlComponents = URLComponents(string: AnnictConsts.rootURI + "/oauth/token")
         urlComponents?.queryItems = [URLQueryItem(name: "client_id", value: AnnictConsts.clientID),
                                      URLQueryItem(name: "client_secret", value: AnnictConsts.clientSecret),
                                      URLQueryItem(name: "grant_type", value: "authorization_code"),

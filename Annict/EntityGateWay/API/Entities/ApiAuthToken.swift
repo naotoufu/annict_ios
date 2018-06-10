@@ -11,7 +11,7 @@ struct ApiAuthToken: InitializableWithData, InitializableWithJson {
     var accessToken: String
     var tokenType: String
     var scope: String
-    var createdAt: String
+    var createdAt: Int
     
     init(data: Data?) throws {
         // Here you can parse the JSON or XML using the build in APIs or your favorite libraries
@@ -29,7 +29,7 @@ struct ApiAuthToken: InitializableWithData, InitializableWithJson {
         guard let accessToken = json["access_token"] as? String,
             let tokenType = json["token_type"] as? String,
             let scope = json["scope"] as? String,
-            let createdAt = json["created_at"] as? String else {
+            let createdAt = json["created_at"] as? Int else {
                 throw NSError.createPraseError()
         }
         

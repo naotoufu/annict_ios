@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         let urlComponents = NSURLComponents(url: url, resolvingAgainstBaseURL: true)
         if url.host == "oauth", let authCode = urlComponents?.queryItems?.first?.value {
-            NotificationCenter.default.post(name: .loginViewControllerCloseNotification, object: authCode)
+            NotificationCenter.default.post(name: .loginViewControllerCloseNotification, object: nil, userInfo: ["authCode": authCode])
         }
         return true
     }

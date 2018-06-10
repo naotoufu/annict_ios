@@ -12,7 +12,7 @@ protocol ApiAuthTokenGateway: AuthTokenGateway {
     
 }
 
-class ApiAuthTokenGatewayImplementation: AuthTokenGateway {
+class ApiAuthTokenGatewayImplementation: ApiAuthTokenGateway {
     let apiClient: ApiClient
     
     init(apiClient: ApiClient) {
