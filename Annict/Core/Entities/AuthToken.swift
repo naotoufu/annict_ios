@@ -7,9 +7,16 @@
 //
 
 import Foundation
+
 struct AuthToken {
     var accessToken: String
     var tokenType: String
     var scope: String
     var createdAt: Int
+}
+
+extension AuthToken: Equatable { }
+
+func == (lhs: AuthToken, rhs: AuthToken) -> Bool {
+    return lhs.accessToken == rhs.accessToken
 }

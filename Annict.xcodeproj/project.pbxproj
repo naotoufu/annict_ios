@@ -38,6 +38,10 @@
 		9DC8A62F20C97FB200EB43E9 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */; };
 		9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */; };
 		9DEAF33120D654AD0063533E /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33020D654AD0063533E /* NSError.swift */; };
+		9DEAF33420D688590063533E /* CacheAuthTokenGatewayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33320D688590063533E /* CacheAuthTokenGatewayTest.swift */; };
+		9DEAF33720D688A20063533E /* ApiAuthTokenGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33620D688A20063533E /* ApiAuthTokenGatewaySpy.swift */; };
+		9DEAF33920D68B8B0063533E /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33820D68B8B0063533E /* AuthToken.swift */; };
+		9DEAF33B20D68ECE0063533E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33A20D68ECE0063533E /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +102,10 @@
 		9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
 		9DEAF33020D654AD0063533E /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		9DEAF33320D688590063533E /* CacheAuthTokenGatewayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAuthTokenGatewayTest.swift; sourceTree = "<group>"; };
+		9DEAF33620D688A20063533E /* ApiAuthTokenGatewaySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthTokenGatewaySpy.swift; sourceTree = "<group>"; };
+		9DEAF33820D68B8B0063533E /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		9DEAF33A20D68ECE0063533E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,7 @@
 			children = (
 				9DEAF32F20D654940063533E /* Creater */,
 				9D6CA5B620CEB53F005B80BE /* URLSessionStub.swift */,
+				9DEAF33520D688850063533E /* Gateways */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				9DB34C0F2029FA1000534402 /* AnnictTests.swift */,
+				9DEAF33A20D68ECE0063533E /* Result.swift */,
 				9DEAF33220D654EC0063533E /* Gateways */,
 				9D6CA5B520CEB290005B80BE /* Helper */,
 				9DB34C112029FA1000534402 /* Info.plist */,
@@ -308,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				9DEAF33020D654AD0063533E /* NSError.swift */,
+				9DEAF33820D68B8B0063533E /* AuthToken.swift */,
 			);
 			path = Creater;
 			sourceTree = "<group>";
@@ -316,6 +327,15 @@
 			isa = PBXGroup;
 			children = (
 				9D6CA5B320CEB0FD005B80BE /* ApiClientTest.swift */,
+				9DEAF33320D688590063533E /* CacheAuthTokenGatewayTest.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		9DEAF33520D688850063533E /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAF33620D688A20063533E /* ApiAuthTokenGatewaySpy.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -489,6 +509,10 @@
 				9D6CA5B420CEB0FD005B80BE /* ApiClientTest.swift in Sources */,
 				9D6CA5B720CEB53F005B80BE /* URLSessionStub.swift in Sources */,
 				9DEAF33120D654AD0063533E /* NSError.swift in Sources */,
+				9DEAF33720D688A20063533E /* ApiAuthTokenGatewaySpy.swift in Sources */,
+				9DEAF33920D68B8B0063533E /* AuthToken.swift in Sources */,
+				9DEAF33B20D68ECE0063533E /* Result.swift in Sources */,
+				9DEAF33420D688590063533E /* CacheAuthTokenGatewayTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
