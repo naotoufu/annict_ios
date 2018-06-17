@@ -18,6 +18,8 @@
 		9D6CA5AB20CC116D005B80BE /* SendAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */; };
 		9D6CA5AE20CC2131005B80BE /* CacheAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */; };
 		9D6CA5B020CCC0FA005B80BE /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */; };
+		9D6CA5B420CEB0FD005B80BE /* ApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5B320CEB0FD005B80BE /* ApiClientTest.swift */; };
+		9D6CA5B720CEB53F005B80BE /* URLSessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5B620CEB53F005B80BE /* URLSessionStub.swift */; };
 		9DB1A0D720CA63BB00ACDA4B /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */; };
 		9DB1A0DA20CA7A8C00ACDA4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1A0DC20CA7A8C00ACDA4B /* Localizable.strings */; };
 		9DB1A0E320CA817400ACDA4B /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A0E220CA817400ACDA4B /* UINavigationController.swift */; };
@@ -35,6 +37,7 @@
 		9DC8A62D20C97E4900EB43E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62C20C97E4900EB43E9 /* Result.swift */; };
 		9DC8A62F20C97FB200EB43E9 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */; };
 		9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */; };
+		9DEAF33120D654AD0063533E /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33020D654AD0063533E /* NSError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,8 @@
 		9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		9D6CA5B320CEB0FD005B80BE /* ApiClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTest.swift; sourceTree = "<group>"; };
+		9D6CA5B620CEB53F005B80BE /* URLSessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionStub.swift; sourceTree = "<group>"; };
 		9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
 		9DB1A0DB20CA7A8C00ACDA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9DB1A0DF20CA7AE900ACDA4B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 		9DC8A62C20C97E4900EB43E9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
+		9DEAF33020D654AD0063533E /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,15 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		9D6CA5B520CEB290005B80BE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAF32F20D654940063533E /* Creater */,
+				9D6CA5B620CEB53F005B80BE /* URLSessionStub.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		9DB1A0D020CA5DB200ACDA4B /* GateWays */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				9DB34C0F2029FA1000534402 /* AnnictTests.swift */,
+				9DEAF33220D654EC0063533E /* Gateways */,
+				9D6CA5B520CEB290005B80BE /* Helper */,
 				9DB34C112029FA1000534402 /* Info.plist */,
 			);
 			path = AnnictTests;
@@ -285,6 +302,22 @@
 				9DB1A0D620CA63BB00ACDA4B /* AuthTokenRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		9DEAF32F20D654940063533E /* Creater */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAF33020D654AD0063533E /* NSError.swift */,
+			);
+			path = Creater;
+			sourceTree = "<group>";
+		};
+		9DEAF33220D654EC0063533E /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CA5B320CEB0FD005B80BE /* ApiClientTest.swift */,
+			);
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +486,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB34C102029FA1000534402 /* AnnictTests.swift in Sources */,
+				9D6CA5B420CEB0FD005B80BE /* ApiClientTest.swift in Sources */,
+				9D6CA5B720CEB53F005B80BE /* URLSessionStub.swift in Sources */,
+				9DEAF33120D654AD0063533E /* NSError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
