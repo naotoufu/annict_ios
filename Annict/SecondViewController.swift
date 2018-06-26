@@ -10,6 +10,25 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBAction func onRequestWorkButtontapped(_ sender: Any) {
+        let apiClient = ApiClientImplementation(urlSessionConfiguration: URLSessionConfiguration.default,
+                                                completionHandlerQueue: OperationQueue.main)
+        let apiWorksGateway = ApiWorksGatewayImplementation(apiClient: apiClient)
+        let viewContext = CoreDataStackImplementation.sharedInstance.persistentContainer.viewContext
+        let coreDataWorksGateway = CoreDataWorksGateway(viewContext: viewContext)
+        
+        let worksGateway = CacheWorksGateway(apiWorksGateway: apiWorksGateway,
+                                             localPersistenceWorksGateway: coreDataWorksGateway)
+        worksGateway.fetchWorks { (result) in
+            switch result {
+            case .success(let works):
+                print(works)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

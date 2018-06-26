@@ -75,8 +75,9 @@ struct VoidResponse: InitializableWithData {
 extension Array: InitializableWithData {
     init(data: Data?) throws {
         guard let data = data,
-            let jsonObject = try? JSONSerialization.jsonObject(with: data),
-            let jsonArray = jsonObject as? [[String: Any]] else {
+            let jsonObject = try? JSONSerialization.jsonObject(with: data) as? [String : Any],
+            let worksJsonObject = jsonObject?["works"],
+            let jsonArray = worksJsonObject as? [[String: Any]] else {
                 throw NSError.createPraseError()
         }
         

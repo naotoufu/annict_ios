@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreDataWork" representedClassName="CoreDataWork" syncable="YES" codeGenerationType="class">
+        <attribute name="episodesCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="images" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="malAnimeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="media" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediaText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noEpisodes" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="officialSiteUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releasedOn" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="releasedOnAbout" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reviewsCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seasonName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seasonNameText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleKana" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterHashtag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="watchersCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wikipediaUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CoreDataWork" positionX="-63" positionY="-18" width="128" height="328"/>
+    </elements>
+</model>

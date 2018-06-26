@@ -1,5 +1,5 @@
 //
-//  ApiAuthTokenGateWay.swift
+//  ApiAuthTokenGateway.swift
 //  Annict
 //
 //  Created by 伊東直人 on 2018/06/09.
