@@ -17,8 +17,8 @@ class CacheAuthTokenGateway: AuthTokenGateway {
     
     // MARK: - AuthTokenGateway
     
-    func sendOauthToken(code: String, completionHandler: @escaping (Result<AuthToken>) -> Void) {
-        apiAuthTokenGateway.sendOauthToken(code: code) { (result) in
+    func receiveOauthToken(code: String, completionHandler: @escaping (Result<AuthToken>) -> Void) {
+        apiAuthTokenGateway.receiveOauthToken(code: code) { (result) in
             self.handleFetchAuthTokensApiResult(result, completionHandler: completionHandler)
         }
     }

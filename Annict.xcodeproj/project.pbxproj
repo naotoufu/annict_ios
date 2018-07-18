@@ -15,7 +15,7 @@
 		9D6CA5A120CBD421005B80BE /* ApiAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */; };
 		9D6CA5A420CBD61C005B80BE /* AuthTokenGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A320CBD61C005B80BE /* AuthTokenGateway.swift */; };
 		9D6CA5A820CBEB02005B80BE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5A720CBEB02005B80BE /* LoginPresenter.swift */; };
-		9D6CA5AB20CC116D005B80BE /* SendAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */; };
+		9D6CA5AB20CC116D005B80BE /* ReceiveAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AA20CC116D005B80BE /* ReceiveAuthToken.swift */; };
 		9D6CA5AE20CC2131005B80BE /* CacheAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */; };
 		9D6CA5B020CCC0FA005B80BE /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */; };
 		9D6CA5B420CEB0FD005B80BE /* ApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CA5B320CEB0FD005B80BE /* ApiClientTest.swift */; };
@@ -52,6 +52,7 @@
 		9DC8A62D20C97E4900EB43E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62C20C97E4900EB43E9 /* Result.swift */; };
 		9DC8A62F20C97FB200EB43E9 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */; };
 		9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */; };
+		9DC96E2320FCD3F200B15128 /* WorkImageApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC96E2220FCD3F200B15128 /* WorkImageApiRequest.swift */; };
 		9DCEC69320DD4F8F00F9A747 /* WorksGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCEC69220DD4F8F00F9A747 /* WorksGateway.swift */; };
 		9DCEC69520DD4FFB00F9A747 /* AddWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCEC69420DD4FFB00F9A747 /* AddWork.swift */; };
 		9DCEC69720DD514200F9A747 /* DisplayWorksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCEC69620DD514200F9A747 /* DisplayWorksList.swift */; };
@@ -71,6 +72,11 @@
 		9DEAF33920D68B8B0063533E /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33820D68B8B0063533E /* AuthToken.swift */; };
 		9DEAF33B20D68ECE0063533E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33A20D68ECE0063533E /* Result.swift */; };
 		9DEAF33D20DD49810063533E /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33C20DD49810063533E /* Work.swift */; };
+		9DEC6A2820F6376600BD1B44 /* DisplayWorkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC6A2720F6376600BD1B44 /* DisplayWorkImage.swift */; };
+		9DEC6A2A20F6390D00BD1B44 /* WorkImageGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC6A2920F6390D00BD1B44 /* WorkImageGateway.swift */; };
+		9DEC6A2C20F6399100BD1B44 /* WorkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC6A2B20F6399100BD1B44 /* WorkImage.swift */; };
+		9DEC6A2E20F63BBC00BD1B44 /* ApiWorkImageGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC6A2D20F63BBC00BD1B44 /* ApiWorkImageGateway.swift */; };
+		9DEC6A3020F63CC800BD1B44 /* ApiWorkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC6A2F20F63CC800BD1B44 /* ApiWorkImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +105,7 @@
 		9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5A320CBD61C005B80BE /* AuthTokenGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenGateway.swift; sourceTree = "<group>"; };
 		9D6CA5A720CBEB02005B80BE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAuthToken.swift; sourceTree = "<group>"; };
+		9D6CA5AA20CC116D005B80BE /* ReceiveAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveAuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5AD20CC2131005B80BE /* CacheAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAuthToken.swift; sourceTree = "<group>"; };
 		9D6CA5AF20CCC0FA005B80BE /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		9D6CA5B320CEB0FD005B80BE /* ApiClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTest.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 		9DC8A62C20C97E4900EB43E9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		9DC8A62E20C97FB200EB43E9 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		9DC8A63020C9842800EB43E9 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
+		9DC96E2220FCD3F200B15128 /* WorkImageApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkImageApiRequest.swift; sourceTree = "<group>"; };
 		9DCEC69220DD4F8F00F9A747 /* WorksGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksGateway.swift; sourceTree = "<group>"; };
 		9DCEC69420DD4FFB00F9A747 /* AddWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWork.swift; sourceTree = "<group>"; };
 		9DCEC69620DD514200F9A747 /* DisplayWorksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWorksList.swift; sourceTree = "<group>"; };
@@ -164,6 +171,11 @@
 		9DEAF33820D68B8B0063533E /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		9DEAF33A20D68ECE0063533E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		9DEAF33C20DD49810063533E /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		9DEC6A2720F6376600BD1B44 /* DisplayWorkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWorkImage.swift; sourceTree = "<group>"; };
+		9DEC6A2920F6390D00BD1B44 /* WorkImageGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkImageGateway.swift; sourceTree = "<group>"; };
+		9DEC6A2B20F6399100BD1B44 /* WorkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkImage.swift; sourceTree = "<group>"; };
+		9DEC6A2D20F63BBC00BD1B44 /* ApiWorkImageGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorkImageGateway.swift; sourceTree = "<group>"; };
+		9DEC6A2F20F63CC800BD1B44 /* ApiWorkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorkImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +218,7 @@
 			children = (
 				9D6CA59E20CBD2A3005B80BE /* AuthToken.swift */,
 				9DEAF33C20DD49810063533E /* Work.swift */,
+				9DEC6A2B20F6399100BD1B44 /* WorkImage.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 			children = (
 				9D6CA5A320CBD61C005B80BE /* AuthTokenGateway.swift */,
 				9DCEC69220DD4F8F00F9A747 /* WorksGateway.swift */,
+				9DEC6A2920F6390D00BD1B44 /* WorkImageGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -222,10 +236,11 @@
 		9D6CA5A920CC1118005B80BE /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				9D6CA5AA20CC116D005B80BE /* SendAuthToken.swift */,
+				9D6CA5AA20CC116D005B80BE /* ReceiveAuthToken.swift */,
 				9DCEC69420DD4FFB00F9A747 /* AddWork.swift */,
 				9DCEC69820DD523800F9A747 /* DeleteWork.swift */,
 				9DCEC69620DD514200F9A747 /* DisplayWorksList.swift */,
+				9DEC6A2720F6376600BD1B44 /* DisplayWorkImage.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -276,6 +291,7 @@
 			children = (
 				9D6CA59B20CBD1E1005B80BE /* ApiAuthTokenGateway.swift */,
 				9DCEC6AB20DDD70200F9A747 /* ApiWorksGateway.swift */,
+				9DEC6A2D20F63BBC00BD1B44 /* ApiWorkImageGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -285,6 +301,7 @@
 			children = (
 				9D6CA5A020CBD421005B80BE /* ApiAuthToken.swift */,
 				9DCEC69A20DD532800F9A747 /* ApiWork.swift */,
+				9DEC6A2F20F63CC800BD1B44 /* ApiWorkImage.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -405,6 +422,7 @@
 				9DCEC69C20DDD00500F9A747 /* WorksApiRequest.swift */,
 				9DCEC6A520DDD2A300F9A747 /* AddWorkApiRequest.swift */,
 				9DCEC6A920DDD66500F9A747 /* DeleteWorkApiRequest.swift */,
+				9DC96E2220FCD3F200B15128 /* WorkImageApiRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -604,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEC6A2A20F6390D00BD1B44 /* WorkImageGateway.swift in Sources */,
 				9DEAF33D20DD49810063533E /* Work.swift in Sources */,
 				9D9EA4F220DF42DF00BAB64C /* AnnictModel.xcdatamodeld in Sources */,
 				9DCEC6AE20DDD80C00F9A747 /* LocalPersistenceWorksGateway.swift in Sources */,
@@ -612,6 +631,7 @@
 				9D6CA5B020CCC0FA005B80BE /* LoginConfigurator.swift in Sources */,
 				9DB1A0D720CA63BB00ACDA4B /* AuthTokenRequest.swift in Sources */,
 				9DCEC6B020DDD86900F9A747 /* CoreDataWork.swift in Sources */,
+				9DEC6A2C20F6399100BD1B44 /* WorkImage.swift in Sources */,
 				9DB1A0E320CA817400ACDA4B /* UINavigationController.swift in Sources */,
 				9DCEC69520DD4FFB00F9A747 /* AddWork.swift in Sources */,
 				9DC8A62D20C97E4900EB43E9 /* Result.swift in Sources */,
@@ -620,11 +640,12 @@
 				9D9EA4FB20DF89D300BAB64C /* WorksTableViewController.swift in Sources */,
 				9DC8A62320C979A600EB43E9 /* LoginViewController.swift in Sources */,
 				9D9EA4FD20DFA85700BAB64C /* CoreDataStack.swift in Sources */,
+				9DEC6A3020F63CC800BD1B44 /* ApiWorkImage.swift in Sources */,
 				9D6CA59820CBB10E005B80BE /* AnnictConsts.swift in Sources */,
 				9DB34BFD2029FA1000534402 /* SecondViewController.swift in Sources */,
 				9D6CA59A20CBCEA0005B80BE /* Notification.swift in Sources */,
 				9DCEC69920DD523800F9A747 /* DeleteWork.swift in Sources */,
-				9D6CA5AB20CC116D005B80BE /* SendAuthToken.swift in Sources */,
+				9D6CA5AB20CC116D005B80BE /* ReceiveAuthToken.swift in Sources */,
 				9D6CA59F20CBD2A3005B80BE /* AuthToken.swift in Sources */,
 				9D9EA50820DFACBC00BAB64C /* WorkTableViewCell.swift in Sources */,
 				9D6CA5A420CBD61C005B80BE /* AuthTokenGateway.swift in Sources */,
@@ -633,6 +654,7 @@
 				9D9EA4F920DF898A00BAB64C /* WorksConfigurator.swift in Sources */,
 				9D6CA59C20CBD1E1005B80BE /* ApiAuthTokenGateway.swift in Sources */,
 				9DCEC6A020DDD15A00F9A747 /* CacheWorksGateway.swift in Sources */,
+				9DEC6A2820F6376600BD1B44 /* DisplayWorkImage.swift in Sources */,
 				9D6CA5A120CBD421005B80BE /* ApiAuthToken.swift in Sources */,
 				9D9EA55120E12D5700BAB64C /* DateFormatter.swift in Sources */,
 				9D6CA5A820CBEB02005B80BE /* LoginPresenter.swift in Sources */,
@@ -641,10 +663,12 @@
 				9D6CA5AE20CC2131005B80BE /* CacheAuthToken.swift in Sources */,
 				9DCEC69D20DDD00500F9A747 /* WorksApiRequest.swift in Sources */,
 				9D9EA50120DFA96800BAB64C /* WorksViewRouter.swift in Sources */,
+				9DC96E2320FCD3F200B15128 /* WorkImageApiRequest.swift in Sources */,
 				9DB34BF92029FA1000534402 /* AppDelegate.swift in Sources */,
 				9D9EA50420DFA9AC00BAB64C /* ViewRouter.swift in Sources */,
 				9DCEC69320DD4F8F00F9A747 /* WorksGateway.swift in Sources */,
 				9DB34BFB2029FA1000534402 /* FirstViewController.swift in Sources */,
+				9DEC6A2E20F63BBC00BD1B44 /* ApiWorkImageGateway.swift in Sources */,
 				9DC8A63120C9842800EB43E9 /* AuthorizationRequest.swift in Sources */,
 				9DC8A62F20C97FB200EB43E9 /* ApiResponse.swift in Sources */,
 				9D9EA50620DFAC6300BAB64C /* UIViewController-Alert.swift in Sources */,

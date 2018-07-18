@@ -10,10 +10,10 @@ import Foundation
 @testable import Annict
 
 class ApiAuthTokenGatewaySpy: ApiAuthTokenGateway {
-    var sendOAuthTokenResultToBeReturned: Result<AuthToken>!
+    var receiveOAuthTokenResultToBeReturned: Result<AuthToken>!
     
-    func sendOauthToken(code: String, completionHandler: @escaping SendOauthTokenEntityGatewayCompletionHandler) {
-        completionHandler(sendOAuthTokenResultToBeReturned)
+    func receiveOauthToken(code: String, completionHandler: @escaping ReceiveOauthTokenEntityGatewayCompletionHandler) {
+        completionHandler(receiveOAuthTokenResultToBeReturned)
     }
     
 }

@@ -9,10 +9,10 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    let apiClient = ApiClientImplementation(urlSessionConfiguration: URLSessionConfiguration.default,
+                                            completionHandlerQueue: OperationQueue.main)
 
     @IBAction func onRequestWorkButtontapped(_ sender: Any) {
-        let apiClient = ApiClientImplementation(urlSessionConfiguration: URLSessionConfiguration.default,
-                                                completionHandlerQueue: OperationQueue.main)
         let apiWorksGateway = ApiWorksGatewayImplementation(apiClient: apiClient)
         let viewContext = CoreDataStackImplementation.sharedInstance.persistentContainer.viewContext
         let coreDataWorksGateway = CoreDataWorksGateway(viewContext: viewContext)
@@ -31,7 +31,17 @@ class SecondViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+         let apiWorkImageGateway = ApiWorkImageGatewayImplementation(apiClient: apiClient)
+        apiWorkImageGateway.fetchWorkImage(id: "5795") { result in
+            switch result {
+            case .success(let workImage):
+                print(workImage)
+            case .failure(let error):
+                print(error)
+            }
+        }
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {

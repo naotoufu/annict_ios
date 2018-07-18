@@ -21,7 +21,7 @@ class ApiAuthTokenGatewayImplementation: ApiAuthTokenGateway {
     
     // MARK: - ApiAuthTokenGateway
     
-    func sendOauthToken(code: String,  completionHandler: @escaping (Result<AuthToken>) -> Void) {
+    func receiveOauthToken(code: String,  completionHandler: @escaping (Result<AuthToken>) -> Void) {
         let authTokenRequest = AuthTokenRequest(code: code)
         apiClient.execute(request: authTokenRequest) { (result: Result<ApiResponse<ApiAuthToken>>) in
             switch result {

@@ -10,20 +10,20 @@ import Foundation
 
 @objc protocol LoginPresenter : class {
     func viewDidLoad()
-    @objc func sendOauthToken(_ notification: Notification)
+    @objc func receiveOauthToken(_ notification: Notification)
 }
 
 class LoginPresenterImplementation: LoginPresenter {
-    fileprivate let sendAuthTokenUseCase: SendAuthTokenUseCase
+    fileprivate let receiveAuthTokenUseCase: ReceiveAuthTokenUseCase
     
-    init(sendAuthTokenUseCase: SendAuthTokenUseCase) {
-        self.sendAuthTokenUseCase = sendAuthTokenUseCase
-        NotificationCenter.default.addObserver(self, selector: #selector(sendOauthToken(_:)), name: .loginViewControllerCloseNotification, object: nil)
+    init(receiveAuthTokenUseCase: ReceiveAuthTokenUseCase) {
+        self.receiveAuthTokenUseCase = receiveAuthTokenUseCase
+        NotificationCenter.default.addObserver(self, selector: #selector(receiveOauthToken(_:)), name: .loginViewControllerCloseNotification, object: nil)
     }
     
-    @objc func sendOauthToken(_ notification: Notification) {
+    @objc func receiveOauthToken(_ notification: Notification) {
         if let authCode = notification.userInfo?["authCode"] as? String {
-            sendAuthTokenUseCase.sendAuthToken(code: authCode) { (result) in
+            receiveAuthTokenUseCase.receiveAuthToken(code: authCode) { (result) in
                 print(result)
             }
         }

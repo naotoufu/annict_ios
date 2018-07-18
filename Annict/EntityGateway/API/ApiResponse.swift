@@ -46,6 +46,12 @@ struct ApiParseError: Error {
     }
 }
 
+struct ApiDataNothingError: Error {
+    static let code = 998
+    
+    let httpUrlResponse: HTTPURLResponse
+}
+
 // This wraps a successful API response and it includes the generic data as well
 // The reason why we need this wrapper is that we want to pass to the client the status code and the raw response as well
 struct ApiResponse<T: InitializableWithData> {
@@ -63,6 +69,27 @@ struct ApiResponse<T: InitializableWithData> {
         }
     }
 }
+
+struct DecodableApiResponse<T: Decodable> {
+    let entity: T
+    let httpUrlResponse: HTTPURLResponse
+    let data: Data?
+    
+    init(data: Data?, httpUrlResponse: HTTPURLResponse) throws {
+        do {
+            let decoder = JSONDecoder()
+            guard let data = data else {
+                throw ApiDataNothingError(httpUrlResponse: httpUrlResponse)
+            }
+            self.entity = try decoder.decode(T.self, from: data)
+            self.httpUrlResponse = httpUrlResponse
+            self.data = data
+        } catch {
+            throw ApiParseError(error: error, httpUrlResponse: httpUrlResponse, data: data)
+        }
+    }
+}
+
 
 // Some endpoints might return a 204 No Content
 // We can't have Void implement InitializableWithData so we've created a "Void" response

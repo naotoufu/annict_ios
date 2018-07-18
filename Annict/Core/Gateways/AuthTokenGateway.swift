@@ -8,8 +8,8 @@
 
 import Foundation
 
-typealias SendOauthTokenEntityGatewayCompletionHandler = (_ authToken: Result<AuthToken>) -> Void
+typealias ReceiveOauthTokenEntityGatewayCompletionHandler = (_ authToken: Result<AuthToken>) -> Void
 
 protocol AuthTokenGateway {
-    func sendOauthToken(code: String, completionHandler: @escaping SendOauthTokenEntityGatewayCompletionHandler)
+    func receiveOauthToken(code: String, completionHandler: @escaping ReceiveOauthTokenEntityGatewayCompletionHandler)
 }

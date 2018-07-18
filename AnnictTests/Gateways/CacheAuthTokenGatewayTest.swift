@@ -30,12 +30,12 @@ class CacheAuthTokenGatewayTest: XCTestCase {
         let authTokenToReturn = AuthToken.createAuthToken()
         let expectedResultToBeReturned: Result<AuthToken> = .success(authTokenToReturn)
         
-        apiAuthTokenGatewaySpy.sendOAuthTokenResultToBeReturned = expectedResultToBeReturned
+        apiAuthTokenGatewaySpy.receiveOAuthTokenResultToBeReturned = expectedResultToBeReturned
         
         let fetchAuthTokenCompletionHandlerExpectation = expectation(description: "Fetch AuthToken completion handler expectation")
         
         // When
-        cacheAuthTokenGateway.sendOauthToken(code: code) { (result) in
+        cacheAuthTokenGateway.receiveOauthToken(code: code) { (result) in
             // Then
             XCTAssertEqual(expectedResultToBeReturned, result, "The expected result wasn't returned")
             

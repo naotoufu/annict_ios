@@ -20,9 +20,9 @@ class LoginConfiguratorImplementation: LoginConfigurator {
         
         let authTokenGateway = CacheAuthTokenGateway(apiAuthTokenGateway: apiAuthTokenGateway)
         
-        let sendAuthTokenUseCase = SendAuthTokenUseCaseImplementation(authTokenGateway: authTokenGateway)
+        let receiveAuthTokenUseCase = ReceiveAuthTokenUseCaseImplementation(authTokenGateway: authTokenGateway)
         
-        let presenter = LoginPresenterImplementation(sendAuthTokenUseCase: sendAuthTokenUseCase)
+        let presenter = LoginPresenterImplementation(receiveAuthTokenUseCase: receiveAuthTokenUseCase)
         
         loginViewController.presenter = presenter
     }
